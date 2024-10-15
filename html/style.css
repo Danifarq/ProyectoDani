@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* se importar dos fuentes de Google Fonts: Russo One y Secular One, que se utilizarán en el diseño. */
+
+body {
+    background: #073071;
+    /*Establece un fondo azul oscuro.*/
+    margin: 0;
+    /*acerca todo lo mas posible al margen*/
+}
+
+.container-element {
+    height: 100vh;
+    /*alto del contenedor */
+    width: 100vw;
+    /*ancho del contenedor */
+    display: grid;
+    /*organiza las cajas */
+    grid-gap: 15px;
+    /*ancho de las columnas de afuera del contenedor */
+    justify-items: center;
+    /*centra el contenedor */
+    grid-template-columns: 1fr;
+    /*cantidad de columnas 1fr */
+    grid-template-rows: 50px 50px 1fr;
+    /*50px renglones,cantidad de filas 1fr */
+}
+
+.container-title {
+    /*Contenedor para el titulo.*/
+    display: grid;
+    /*organiza las cajas */
+    font-weight: bold;
+    /*grosor de letra negrita */
+    font-size: 25px;
+    /*tamaño de letra  */
+    text-align: center;
+    /*texto alineado  */
+    height: 65px;
+    /*puede ser px o vh */
+    width: 100vw;
+    /*puede ser px o vw  */
+    font-family: 'Secular One', sans-serif;
+    /* llama a la Fuente utilizada*/
+}
+
+.contain-rulette {
+    /*Contenedor para la ruleta.*/
+    height: 350px;
+    /*Altura fija de 350 píxeles.*/
+    width: 50vw;
+    /* Ancho del 50% de la ventana de visualización.*/
+    display: grid;
+    /*organiza las cajas */
+    align-items: center;
+    /*Centra verticalmente los elementos. */
+    justify-items: center;
+    /*Centra horizontalmente los elementos.*/
+    justify-content: center;
+    /*Centra el contenido al contenedor */
+}
+
+.container-move {
+    display: grid;
+    /*organiza las cajas */
+}
+
+.container-element .container-title {
+    grid-column: 1/2;
+    /*   Ocupa la primera columna.. */
+    grid-row: 1/2;
+    /*  Ocupa la primera fila. */
+}
+
+.container-element .contain-arrow {
+    grid-column: 1/2;
+    /*   Ocupa la primera columna.. */
+    grid-row: 2/3;
+    /*  el elemento ocupará la fila que está entre la línea 2 y la línea 3.*/
+    width: 50px;
+    /* Ancho  de 50 píxeles.*/
+    height: 50px;
+    /*Altura fija de 50 píxeles.*/
+}
+
+.container-element .contain-rulette {
+    grid-column: 1/2;
+    /*   Ocupa la primera columna.. */
+    grid-row: 3/4;
+    /*  el elemento ocupará la fila que está entre la línea 3 y la línea 4.*/
+}
+
+.container-cone {
+    /*  Como va a ser el contenedor de los conos */
+    display: grid;
+    /*organiza las cajas */
+    grid-template-columns: 1fr;
+    /* Una columna que ocupa todo el espacio. */
+    grid-template-rows: 1fr;
+    /*Una fila que ocupa todo el espacio. */
+    border: 5px solid #f7981f;
+    /*Borde de 5 píxeles en color naranja.*/
+    border-radius: 50%;
+    /* Bordes redondeados para crear una forma circular */
+    animation: rotate 5s infinite linear;
+    /* Aplica una animación de rotación que dura 5 segundos y se repite indefinidamente. */
+}
+
+@keyframes rotate {
+    /*  Como va a rotar la ruleta  */
+    0% {
+        transform: rotate(0deg);
+        /* Comienza sin rotación (0 grados) */
+    }
+    100% {
+        transform: rotate(360deg);
+        /* Termina con una rotación completa (360 grados). */
+    }
+}
+
+.size {
+    width: 350px;
+    /*  Ancho fijo de 350 píxeles. */
+    height: 350px;
+    /*  Altura fija de 350 píxeles */
+    border-radius: 50%;
+    /*  Crea una forma circular. */
+    grid-column: 1/2;
+    /*   Ocupa la primera columna.. */
+    grid-row: 1/2;
+    /*  Ocupa la primera fila. */
+}
+
+.arrow {
+    /* Define el estilo de la flecha. */
+    width: 50px;
+    /* Ancho fijo de 50 píxeles. */
+    height: 50px;
+    /*  Altura fija de 50 píxeles */
+    background: #cacaca;
+    /*  Le da color a la flecha */
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    /* Utiliza un polígono para darle forma de flecha. */
+    transform: rotate(270deg);
+    /*  Rota la flecha 270 grados. */
+}
+
+.circle {
+    width: 350px;
+    /* Ancho  de 350 píxeles.*/
+    height: 350px;
+    /*  Altura fija de 350 píxeles */
+    border-radius: 50%;
+    /*  Crea una forma circular. */
+    background: blue;
+    /*  Le da color  */
+    grid-column: 1/2;
+    /*   Ocupa la primera columna. */
+    grid-row: 1/2;
+    /*  Ocupa la primera fila. */
+}
+
+.cone1 {
+    background: #ff64bb;
+    /* Color rosa. */
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+}
+
+.cone2 {
+    background: #fff;
+    /*  Le da color  */
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(45deg);
+    /* Define el angulo del triángulo. */
+}
+
+.cone3 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(90deg);
+    /* Define el angulo del triángulo. */
+    background: #00b7ff;
+    /*  Le da color  */
+}
+
+.cone4 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(135deg);
+    /* Define el angulo del triángulo. */
+    background: #5d0aaa;
+    /*  Le da color  */
+}
+
+.cone5 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(180deg);
+    /* Define el angulo del triángulo. */
+    background: #0026ff;
+    /*  Le da color  */
+}
+
+.cone6 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(225deg);
+    /* Define el angulo del triángulo. */
+    background: #ffe300;
+    /*  Le da color  */
+}
+
+.cone7 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(270deg);
+    /* Define el angulo del triángulo. */
+    background: red;
+    /*  Le da color  */
+}
+
+.cone8 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    /* Define la forma del triángulo. */
+    transform: rotate(315deg);
+    /* Define el angulo del triángulo. */
+    background: #25ff49;
+    /*  Le da color  */
+}
