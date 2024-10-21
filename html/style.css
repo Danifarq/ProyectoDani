@@ -107,17 +107,20 @@ body {
     /* Aplica una animación de rotación que dura 5 segundos y se repite indefinidamente. */
 }
 
+
+/*
 @keyframes rotate {
-    /*  Como va a rotar la ruleta  */
+    /*  Como va a rotar la ruleta  
     0% {
         transform: rotate(0deg);
-        /* Comienza sin rotación (0 grados) */
+        /* Comienza sin rotación (0 grados) 
     }
     100% {
         transform: rotate(360deg);
-        /* Termina con una rotación completa (360 grados). */
+        /* Termina con una rotación completa (360 grados). 
     }
 }
+*/
 
 .size {
     width: 350px;
@@ -166,6 +169,16 @@ body {
     /* Color rosa. */
     clip-path: polygon(50% 0, 50% 50%, 0 0);
     /* Define la forma del triángulo. */
+    animation: 3s cone1 ease-in-out infinite;
+}
+
+@keyframes cone1 {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translateY(-1200px);
+    }
 }
 
 .cone2 {
@@ -175,6 +188,16 @@ body {
     /* Define la forma del triángulo. */
     transform: rotate(45deg);
     /* Define el angulo del triángulo. */
+    animation: 3s cone2 ease-in-out infinite;
+}
+
+@keyframes cone2 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 500%;
+    }
 }
 
 .cone3 {
@@ -184,6 +207,16 @@ body {
     /* Define el angulo del triángulo. */
     background: #00b7ff;
     /*  Le da color  */
+    animation: 3s cone3 ease-in-out infinite;
+}
+
+@keyframes cone3 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 300%;
+    }
 }
 
 .cone4 {
@@ -193,6 +226,16 @@ body {
     /* Define el angulo del triángulo. */
     background: #5d0aaa;
     /*  Le da color  */
+    animation: 3s cone4 ease-in-out infinite;
+}
+
+@keyframes cone4 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 100% 200%;
+    }
 }
 
 .cone5 {
@@ -202,6 +245,16 @@ body {
     /* Define el angulo del triángulo. */
     background: #0026ff;
     /*  Le da color  */
+    animation: 3s cone5 ease-in-out infinite;
+}
+
+@keyframes cone5 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 100% 200%;
+    }
 }
 
 .cone6 {
@@ -211,6 +264,16 @@ body {
     /* Define el angulo del triángulo. */
     background: #ffe300;
     /*  Le da color  */
+    animation: 3s cone6 ease-in-out infinite;
+}
+
+@keyframes cone6 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 100% 200%;
+    }
 }
 
 .cone7 {
@@ -220,6 +283,16 @@ body {
     /* Define el angulo del triángulo. */
     background: red;
     /*  Le da color  */
+    animation: 3s cone7 ease-in-out infinite;
+}
+
+@keyframes cone7 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: 100% 200%;
+    }
 }
 
 .cone8 {
@@ -229,4 +302,14 @@ body {
     /* Define el angulo del triángulo. */
     background: #25ff49;
     /*  Le da color  */
+    animation: 3s cone8 ease-in-out infinite;
+}
+
+@keyframes cone8 {
+    0% {
+        transform-origin: center;
+    }
+    50% {
+        transform-origin: -300% 100%
+    }
 }
