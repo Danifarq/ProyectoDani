@@ -1,4 +1,6 @@
 body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
     margin: 0;
     height: 100vh;
     background-image: url(../img/fondo4.gif);
@@ -23,4 +25,41 @@ h1:hover {
     font-size: 8.88889vw;
     line-height: 12.22222vw;
     text-align: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    width: calc(25% - 20px);
+    /* 4 productos por fila con espacio */
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    margin: 0 0 10px;
+}
+
+.producto span {
+    font-weight: bold;
+    color: #333;
 }
