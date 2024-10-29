@@ -1,5 +1,4 @@
 body {
- HEAD
     background: purple;
     /*Establece un fondo azul oscuro.*/
     margin: 0px;
@@ -9,9 +8,11 @@ body {
     margin: 0;
     height: 100vh;
     background-image: url(../img/fondo4.gif);
+    box-sizing: border-box;
+    /*borde a los costados*/
 }
 
-h1 {
+.inicio-titulo h1 {
     background-color: plum;
     /* Color inicial */
     color: #000;
