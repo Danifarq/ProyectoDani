@@ -145,7 +145,11 @@ nav ul li a:hover {
 
 .contacto {
     padding: 50px 20px;
+<<<<<<< Updated upstream
     background-color: rgba(120, 8, 165, 0.5);
+=======
+    background-color: rgb(120, 8, 165, 0.5);
+>>>>>>> Stashed changes
     text-align: center;
 }
 
@@ -166,11 +170,16 @@ nav ul li a:hover {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+<<<<<<< Updated upstream
     border-radius: 5px;
+=======
+    border-radius: 5px
+>>>>>>> Stashed changes
 }
 
 .contacto button {
     padding: 10px 20px;
+<<<<<<< Updated upstream
     background-color: rgba(234, 0, 255, 0.5);
     color: white;
     border: none;
@@ -189,3 +198,15 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px;
 }
+=======
+    background-color: rgb(234, 0, 255, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: rgb(120, 8, 165, 0.5);
+}
+
+>>>>>>> Stashed changes
