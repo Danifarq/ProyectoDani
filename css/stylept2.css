@@ -1,6 +1,26 @@
 body {
-    background: purple;
-    /*Establece un fondo azul oscuro.*/
     margin: 0;
-    /*acerca todo lo mas posible al margen*/
+    height: 100vh;
+    background-image: url(../img/fondo4.gif);
+}
+
+h1 {
+    background-color: plum;
+    /* Color inicial */
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 8.88889vw;
+    line-height: 12.22222vw;
+    text-align: center;
+}
+
+h1:hover {
+    background-color: rgb(234, 0, 255, 0.5);
+    /* Color al pasar el cursor */
+    color: #fff;
+    /* Color del texto al pasar el cursor */
+    font-family: "Noto Serif";
+    font-size: 8.88889vw;
+    line-height: 12.22222vw;
+    text-align: center;
 }
