@@ -11,6 +11,48 @@ body {
     box-sizing: border-box;
     /*borde a los costados*/
 }
+/*selector por estiqueta header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(120, 8, 165, 0.5);
+    padding: 10px 20px;
+}
+
+/*selector conbiando*/
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#inicio {
+    background: url('../img/estayaeesta3.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .inicio-titulo h1 {
     background-color: plum;
