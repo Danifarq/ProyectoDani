@@ -88,3 +88,20 @@ header a {
 header a:hover {
     color: blueviolet;
 }
+
+#baner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondonv2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#baner h1 {
+    color: white;
+}
