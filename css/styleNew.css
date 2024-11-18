@@ -105,3 +105,14 @@ header a:hover {
 #baner h1 {
     color: white;
 }
+
+#Nuestra_vision {}
+
+.colordif {
+    color: blueviolet;
+}
+
+#Nuestra_vision {
+    text-align: center;
+    padding: 200px 12px;
+}
