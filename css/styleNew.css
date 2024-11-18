@@ -1,3 +1,44 @@
+* {
+    box-sizing: border-box;
+    /*hace que los elementos respeten los tamaños definidos*/
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
 body {
-    background-color: aquamarine;
+    margin: 0;
+    /*quita el margen automatico de body*/
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 10px rgba(234, 0, 255, 0.5);
+    cursor: pointer;
+    color: white;
+    background-color: rgba(234, 0, 255, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgba(120, 8, 165, 0.7);
+    transform: scale(1.05);
+    /* Efecto de aumento al pasar el cursor */
 }
