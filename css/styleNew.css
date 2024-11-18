@@ -19,6 +19,10 @@ p {
     font-size: 1.25em;
 }
 
+li {
+    font-size: 1.25em;
+}
+
 body {
     margin: 0;
     /*quita el margen automatico de body*/
@@ -41,4 +45,46 @@ button:hover {
     background-color: rgba(120, 8, 165, 0.7);
     transform: scale(1.05);
     /* Efecto de aumento al pasar el cursor */
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgba(157, 65, 194, 0.5)
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    /*hace que se acomoden en una columna*/
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
 }
